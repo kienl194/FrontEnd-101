@@ -6,25 +6,28 @@ body {
 h1 {
   color: white;
   font-size: 48px;
+  max-width: 50%;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .box {
-  max-width: 1110px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 30%;
-      -ms-flex: 30%;
-          flex: 30%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 10px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .box h1 {
   color: white;
   font-size: 48px;
+  font-weight: 900;
 }
 
 .box svg {
@@ -33,12 +36,14 @@ h1 {
 
 .box__items {
   padding: 32px;
-  width: 350px;
+  max-width: 1110px;
+  width: 25%;
   border-radius: 10px;
   background-color: white;
   -webkit-box-flex: space-between;
       -ms-flex: space-between;
           flex: space-between;
+  overflow: hidden;
 }
 
 .box__title {

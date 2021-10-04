@@ -6,35 +6,42 @@ body {
 h1 {
     color: white;
     font-size: 48px;
+    max-width: 50%;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .box {
 
-    max-width: 1110px;
+
     display: flex;
-    flex: 30%;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    
 
     h1 {
         color: white;
         font-size: 48px;
+        font-weight: 900;
     }
 
     svg {
         left: 0;
     }
-
+    
     &__items {
         padding: 32px;
-        width: 350px;
+        max-width: 1110px;
+        width: 25%;
         border-radius: 10px;;
         background-color: white;
         flex: space-between;
+        overflow: hidden;
     }
 
+    
     &__title {
         font-size: 24px;
         font-weight: bold;
