@@ -6,7 +6,8 @@ body {
 h1 {
     color: white;
     font-size: 48px;
-    max-width: 50%;
+    font-weight: 900;
+    max-width: 45%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -18,43 +19,67 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
+    max-width: 1110px;
+    margin: 0 auto;
     
 
-    h1 {
-        color: white;
-        font-size: 48px;
-        font-weight: 900;
-    }
-
-    svg {
-        left: 0;
-    }
-    
     &__items {
-        padding: 32px;
-        max-width: 1110px;
-        width: 25%;
+        box-sizing: border-box;
+        padding: 40px 32px;
+        width: calc(33% - 30px);
         border-radius: 10px;;
         background-color: white;
-        flex: space-between;
         overflow: hidden;
     }
 
     
     &__title {
         font-size: 24px;
-        font-weight: bold;
+        font-weight: 500;
         margin-top: 32px; 
         margin-bottom: 16px;
+        color: #18191F;
     }
     &__description {
         margin-bottom: 32px; 
+        font-size: 16px;
     }
 
     &__link {
+        display:flex;
+        align-items: center;
+
+        a {
+            font-size: 12px;
+            color: #8C30F5;
+            text-decoration: none;
+        }
         svg {
             margin-left: 5px;
         }
     }
+
+    .submit {
+ 
+        margin: auto 0;
+        margin-top: 60px;
+        position: relative;
+
+        a {
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 10px;
+            border: 1px solid white;
+            padding: 20px 60px 15px  20px;     
+        }
+
+        svg {
+            position: absolute;
+            right: 20px;
+            top: -3px;
+        }
+    }
+   
 }
