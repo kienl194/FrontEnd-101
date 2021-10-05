@@ -8,11 +8,16 @@
 
 }
 
+.hidden {
+    overflow: hidden;
+}
+
 body {
     font-family: var(--font);
     a {
         text-decoration: none; ;
     }
+    
 }
 
 .container {
@@ -125,6 +130,9 @@ body {
  
 }
 
+
+// Get Deal
+
 .getdeal {
     padding-top: 100px;
     &__content {
@@ -134,7 +142,10 @@ body {
     }
 
     &__left {
+
         width: 40%;
+        justify-content: flex-end;
+
         h1 {
             font-size: 48px;
             font-weight: 800;
@@ -148,6 +159,7 @@ body {
 
     &__right {
         position: relative;
+        
     }
 
 }
@@ -163,4 +175,142 @@ body {
     position: absolute;
     left: 100px;
     top: 100px;
+}
+
+// Achievements
+
+.achievement {
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &__content {
+
+        display: flex;
+        justify-content: space-between;
+
+        h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 32px;
+        }
+    }
+
+    &__left {
+
+    
+
+    }
+
+    &_item1 {
+
+        grid-area: item1;
+     }
+     &_item2 {
+
+        grid-area: item2;
+     }
+
+     &_item3 {
+
+        grid-area: item3;
+     }
+
+     &_item4 {
+
+        grid-area: item4;
+     }
+
+
+    &__right {
+
+        display: grid;
+        grid-template-columns: 135px 135px 135px 70px ;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "item1 item1 item2 item2"
+        "item3 item3 item4 item4";
+
+        
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+    }
+
+    &_text {
+        margin-left: 16px;
+
+        h2 {
+            margin: 0;
+            font-size: 28px;
+            color: var(--gray900);
+        }
+
+        p {
+            margin: 0px;
+            font-size: 16px;
+        }
+    }
+}
+
+// Headlinetop
+
+.headlinetop {
+
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    &__left {
+        width: 50%;
+        padding: 50px 50px;
+        background: var(--secondarycolor);
+        position: relative;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: 60px;
+            left: 90px;
+            width: 70%;
+        }
+    }
+
+    &__right {
+        width: 50%;
+        padding-left: 78px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+
+        h1 {
+            font-size: 40px;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 32px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        a {
+            margin-right: 10px;
+            color: var(--primarycolor);
+        }
+    }
 }
