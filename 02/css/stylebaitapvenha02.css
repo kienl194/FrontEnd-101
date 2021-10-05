@@ -317,4 +317,101 @@ body a {
   margin-right: 10px;
   color: var(--primarycolor);
 }
+
+.headlinebottom {
+  padding-top: 210px;
+  padding-bottom: 210px;
+}
+
+.headlinebottom__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.headlinebottom__left {
+  background-color: var(--primarycolor);
+  padding: 40px 48px;
+  padding-left: 48px;
+  position: relative;
+  border-radius: 16px;
+}
+
+.headlinebottom__left h1 {
+  font-size: 40px;
+  color: white;
+  font-weight: 800;
+  margin-bottom: 32px;
+}
+
+.headlinebottom__left p {
+  font-size: 18px;
+  line-height: 32px;
+  color: white;
+  margin-bottom: 32px;
+  width: 45%;
+}
+
+.headlinebottom__left img {
+  position: absolute;
+  right: 60px;
+  top: -150px;
+  width: 35%;
+}
+
+.headlinebottom__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.headlinebottom__link a {
+  color: white;
+  margin-right: 16px;
+}
+
+.footer {
+  background: var(--gray900);
+  padding-top: 48px;
+}
+
+.footer__content {
+  display: block;
+  text-align: center;
+}
+
+.footer__logo {
+  padding-bottom: 32px;
+}
+
+.footer__link {
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 48px;
+}
+
+.footer__link a {
+  color: white;
+}
+
+.footer__link a:not(:last-child) {
+  margin-right: 24px;
+}
+
+.footer__copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.footer svg {
+  margin-left: 16px;
+}
 /*# sourceMappingURL=stylebaitapvenha02.css.map */
