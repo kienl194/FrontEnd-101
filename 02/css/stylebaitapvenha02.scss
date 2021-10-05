@@ -1,0 +1,166 @@
+:root {
+    --font: Inter;
+    --gray900: #18191F;
+    --gray800: #474A57;
+    --gray700: #969BAB;
+    --primarycolor: #8C30F5;
+    --secondarycolor: #D6B1FF;
+
+}
+
+body {
+    font-family: var(--font);
+    a {
+        text-decoration: none; ;
+    }
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.primary__button {
+    font-family: var(--font);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: var(--primarycolor);
+
+}
+
+.secondary__button {
+    font-family: var(--font);
+    color: var(--primarycolor);
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: var(--secondarycolor);
+    
+}
+
+
+// Header
+
+.header {
+
+    border-bottom: 2px solid #E5E9F2;
+
+    &__content {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    
+    
+    
+    &__links {
+    
+        a {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-family: var(--font);
+            color: var(--gray800);
+            
+        }
+    }
+    
+    .primary__button {
+        margin-left: 14px;
+    }
+       
+
+}
+
+
+
+    // Hero
+
+.hero {
+    
+    padding-top: 77px;
+    padding-bottom: 220px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    &__left {
+        width: 45%;
+        margin-top: 70px;
+        h1 {
+            font-size: 72px;
+            margin-bottom: 0;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 32px;
+            margin-bottom: 32px;
+        }
+
+    }
+
+    &__right {
+        width: 640px;
+        height: 640px;
+        position: absolute;
+        right: -80px;
+        top: 0;
+        border-radius: 50%;
+        background-color: #D6B1FF;
+    }
+
+    &__img {
+
+        position:absolute;
+        left: 90px;
+        top: 70px;
+    }
+ 
+}
+
+.getdeal {
+    padding-top: 100px;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left {
+        width: 40%;
+        h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 32px;
+        }
+    }
+
+    &__right {
+        position: relative;
+    }
+
+}
+
+#outer_circle {
+    position: absolute;
+    position: center;
+    right: -30px;
+    top: -45px;
+}
+
+#inner_circle {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
