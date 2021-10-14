@@ -652,10 +652,6 @@ video {
   background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
 }
 
-.p-28 {
-  padding: 7rem;
-}
-
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;

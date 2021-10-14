@@ -1,5 +1,4 @@
 :root {
-  --font: Inter;
   --gray900: #18191F;
   --gray800: #474A57;
   --gray700: #969BAB;
@@ -11,11 +10,13 @@
   overflow: hidden;
 }
 
-body {
-  font-family: var(--font);
+html body {
+  font-family: 'Inter', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
-body a {
+html body a {
   text-decoration: none;
 }
 
@@ -25,7 +26,6 @@ body a {
 }
 
 .primary__button {
-  font-family: var(--font);
   color: white;
   padding: 10px 20px;
   border-radius: 6px;
@@ -33,7 +33,6 @@ body a {
 }
 
 .secondary__button {
-  font-family: var(--font);
   color: var(--primarycolor);
   padding: 10px 20px;
   border-radius: 6px;
